@@ -19,7 +19,7 @@ console.log(helloConst);
 
 // Lexical Scope
 
-// Las funciones anidadas dentro de otra función tienen acceso a las variables declaradas en el scope local.
+// Las funciones anidadas dentro de otra función tienen acceso a las variables declaradas en el scope local y global.
 
 var scope = 'I\'m global';
 
