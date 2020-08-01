@@ -1,0 +1,21 @@
+{
+  "name": "closures-and-scopes",
+  "version": "1.0.0",
+  "description": "Curso de Closures y Scopes en JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "closures",
+    "scopes",
+    "scope",
+    "global",
+    "scope",
+    "local",
+    "scope",
+    "closure"
+  ],
+  "author": "Francisco Flores",
+  "license": "MIT"
+}
