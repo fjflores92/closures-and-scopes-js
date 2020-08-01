@@ -19,7 +19,7 @@ console.log(helloConst);
 
 // Lexical Scope
 
-// Las funciones anidadas dentro de otra función tienen acceso a las variables declaradas en el scope local y global.
+// Las funciones anidadas dentro de otra función tienen acceso a las variables declaradas con var en el scope local y global.
 
 var scope = 'I\'m global';
 
@@ -31,10 +31,10 @@ var scope = 'I\'m global';
 })();
 
 (() => {
-    // A esto se le llama el ámbito léxico. Esta variable pertenece al scope local y es diferente a la variable en el scope global, asi tengan el mismo nombre
+    // A esto se le llama el ámbito léxico. Esta variable pertenece a la función anónima creada (scope local) y es diferente a la variable en el scope global, asi tengan el mismo nombre
     var scope = 'I am just a local'; //La variable scope es una variable local creada dentro de la función
-    const func = () => { //La función func es una función interna, mejor llamada closure
-        return scope //Toma el valor de la variable declarada en la función externa (Scope Local)
+    const func = () => { //La función func es una función interna
+        return scope //Toma el valor de la variable declarada en la función anónima externa
     }
     console.log(func());
 })();
