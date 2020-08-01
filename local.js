@@ -2,7 +2,7 @@
 
 // El alcance de una variable se define por su ubicación dentro del código fuente
 
-const helloWorld = (() => {
+(() => {
     var helloVar = 'Hello World Var';
     let helloLet = 'Hello World Let';
     const helloConst = 'Hello World Const';
@@ -23,14 +23,14 @@ console.log(helloConst);
 
 var scope = 'I\'m global';
 
-const functionScope = (() => {
+(() => {
     const func = () => {
         return scope //Toma el valor de la variable declarada en el Scope Global
     };
     console.log(func());
 })();
 
-const functionLocalScope = (() => {
+(() => {
     // A esto se le llama el ámbito léxico. Esta variable pertenece al scope local y es diferente a la variable en el scope global, asi tengan el mismo nombre
     var scope = 'I am just a local';
     const func = () => {

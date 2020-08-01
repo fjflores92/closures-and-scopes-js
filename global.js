@@ -10,20 +10,17 @@ var hello = 'Hola';
 let world = 'Hello world';
 const helloWorld = 'Hello World!';
 
-const anotherFunct = () => {
+(() => {
     console.log(hello);
     console.log(world);
     console.log(helloWorld);
-}
+})();
 
-anotherFunct();
-
-// Mala Práctica
-const helloWorld = () => {
+// Mala Práctica reasingar variables con var
+(() => {
     globalVar = '¡Soy global alv!';
     var localVar = otherGlobalVar = "I'm Global FB!";
-}
-helloWorld();
+})
 console.log(globalVar);
 console.log(otherGlobalVar);
 //console.log(localVar); //localVar not defined
