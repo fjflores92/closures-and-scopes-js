@@ -20,11 +20,11 @@ anotherFunct();
 
 // Mala Práctica
 const helloWorld = () => {
-    globalVar = 'Soy global alv!';
-    var localVar = otherGlobalVar = "I'm Global FB";
+    globalVar = '¡Soy global alv!';
+    var localVar = otherGlobalVar = "I'm Global FB!";
 }
 helloWorld();
 console.log(globalVar);
-//console.log(localVar); //localVar not defined
 console.log(otherGlobalVar);
+//console.log(localVar); //localVar not defined
 
