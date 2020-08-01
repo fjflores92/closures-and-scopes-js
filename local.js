@@ -32,9 +32,9 @@ var scope = 'I\'m global';
 
 (() => {
     // A esto se le llama el ámbito léxico. Esta variable pertenece al scope local y es diferente a la variable en el scope global, asi tengan el mismo nombre
-    var scope = 'I am just a local';
-    const func = () => {
-        return scope //Toma el valor de la variable declarada dentro del bloque de código (Scope Local)
+    var scope = 'I am just a local'; //La variable scope es una variable local creada dentro de la función
+    const func = () => { //La función func es una función interna, mejor llamada closure
+        return scope //Toma el valor de la variable declarada en la función externa (Scope Local)
     }
     console.log(func());
 })();
